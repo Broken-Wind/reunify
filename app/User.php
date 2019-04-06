@@ -40,7 +40,7 @@ class User extends Authenticatable
     public function getQrUrlAttribute()
     {
 
-        return "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" . config('app.url') . '/' . $this->slug;
+        return "https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=" . config('app.url') . '/' . $this->slug;
     }
 
     /**
