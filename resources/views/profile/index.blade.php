@@ -17,6 +17,10 @@
                 <a href="tel:{{ $user->phone }}">{{ $user->phone }}</a>
                 <br /><br />
                 <a href="{{ $user->linkedin}}">{{ $user->linkedin}}</a>
+                <br /><br />
+                <a href="{{ $user->fb}}">{{ $user->fb}}</a>
+                <br /><br />
+                <a href="{{ $user->instagram}}">{{ $user->instagram}}</a>
 
             </h5>
         </div>

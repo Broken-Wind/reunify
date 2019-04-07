@@ -47,6 +47,10 @@ class ProfileController extends Controller
 
             'linkedin' => request('linkedin'),
 
+            'fb' => request('fb'),
+
+            'instagram' => request('instagram'),
+
         ]);
 
         return view('profile.edit', compact('user'));

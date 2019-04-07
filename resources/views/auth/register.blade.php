@@ -69,6 +69,26 @@
                     @endif
                 </div>
 
+                <div class="form-group">
+                    <input id="fb" type="fb" class="form-control{{ $errors->has('fb') ? ' is-invalid' : '' }}" name="fb" value="{{ old('fb') }}" placeholder="Facebook">
+
+                    @if ($errors->has('fb'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('fb') }}</strong>
+                        </span>
+                    @endif
+                </div>
+
+                <div class="form-group">
+                    <input id="instagram" type="instagram" class="form-control{{ $errors->has('instagram') ? ' is-invalid' : '' }}" name="instagram" value="{{ old('instagram') }}" placeholder="Instagram">
+
+                    @if ($errors->has('instagram'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('instagram') }}</strong>
+                        </span>
+                    @endif
+                </div>
+
 
 
                 <div class="form-group">

@@ -69,6 +69,8 @@ class RegisterController extends Controller
             'slug' => User::generateSlug($data['name']),
             'phone' => $data['phone'],
             'linkedin' => $data['linkedin'],
+            'fb' => $data['fb'],
+            'instagram' => $data['instagram'],
         ]);
     }
 }
