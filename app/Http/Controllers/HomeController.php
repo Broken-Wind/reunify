@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace reunify\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\User;
+use reunify\User;
 
 class HomeController extends Controller
 {
@@ -27,6 +27,6 @@ class HomeController extends Controller
     {
         $user = User::where('slug', $slug)->first();
 
-        return app('App\Http\Controllers\ProfileController')->index($slug);
+        return app('reunify\Http\Controllers\ProfileController')->index($slug);
     }
 }

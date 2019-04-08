@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace reunify;
 
 use Illuminate\Database\Eloquent\Model;
 
